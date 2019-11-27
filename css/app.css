@@ -1,0 +1,9 @@
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+#trash{
+    display: flex;
+    justify-content: space-between;
+    font-size: 6em;
+}

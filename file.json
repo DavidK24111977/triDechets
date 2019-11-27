@@ -1,0 +1,30 @@
+[
+  {
+    "type": "jaune",
+    "dechets": [
+      "bouteille plastique",
+      "boîtes en carton"
+    ]
+  },
+  {
+    "type": "vert",
+    "dechets": [
+      "bouteilles de vin",
+      "bouteilles d'huile"
+    ]
+  },
+  {
+    "type": "bleu",
+    "dechets": [
+      "libération",
+      "voici"
+    ]
+  },
+  {
+    "type": "marron",
+    "dechets": [
+      "blanc de poulet",
+      "couches-culottes"
+    ]
+  }
+]
