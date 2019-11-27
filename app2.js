@@ -24,41 +24,41 @@
 //     console.log(jsonresponse);
 //
 // });
-var trashs=[
-    {
-        "type": "jaune",
+var trashs={
+    "jaune": {
+        "ids": "jaune",
         "color": "#E0D42B",
-        "icon":"<i class='fas fa-trash'></i>",
+        "icon": "<i class='fas fa-trash'></i>",
         "dechets": [
             "bouteille plastique",
             "boîtes en carton"
         ]
     },
-    {
-        "type": "vert",
+    "vert": {
+        "ids": "vert",
         "color": "#0B2E13",
-        "icon":"<i class='fas fa-trash-restore-alt'></i>",
+        "icon": "<i class='fas fa-trash-restore-alt'></i>",
         "dechets": [
             "bouteilles de vin",
             "bouteilles d'huile"
         ]
     },
-    {
-        "type": "bleu",
+    "bleu": {
+        "ids": "bleu",
         "color": "#16193D",
-        "icon":"<i class='fas fa-trash-alt'></i>",
+        "icon": "<i class='fas fa-trash-alt'></i>",
         "dechets": [
             "libération",
             "voici"
         ]
     },
-    {
-        "type": "marron",
+    "marron": {
+        "ids": "marron",
         "color": "#69471E",
-        "icon":"<i class='far fa-trash-alt'></i>",
+        "icon": "<i class='far fa-trash-alt'></i>",
         "dechets": [
             "blanc de poulet",
             "couches-culottes"
         ]
     }
-];
+};
