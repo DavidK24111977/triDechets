@@ -32,3 +32,16 @@
 .selected{
     background-color: #bbb;
 }
+#btn{
+    text-align: center;
+    width: 170px;
+    margin: 50px auto;
+    padding: 10px 0;
+    border: 1px solid #222;
+    cursor: pointer;
+    display: none;
+}
+.good{
+    font-weight:700;
+    color: #095d23;
+}
