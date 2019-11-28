@@ -41,7 +41,11 @@
     cursor: pointer;
     display: none;
 }
-.good{
-    font-weight:700;
-    color: #095d23;
+#result{
+    text-align: center;
+    font-size: 2rem;
 }
+/*.good{*/
+/*    font-weight:700;*/
+/*    color: #095d23;*/
+/*}*/

@@ -4,8 +4,9 @@ var nbreDechet=4;
 var counter = 0;
 var btn= document.getElementById("btn");
 var resultat = 0;
+var trashName;
 createTrash();
-createDechetList()
+createDechetList();
 var block=false;
 
 function createDechetList(){
@@ -46,16 +47,15 @@ function createTrash(){
                 choosenTrash=this.id;
                 document.getElementById(choosenDechet).style.display="none";
 
-                console.log(choosenDechet);
-                console.log(trashs[choosenTrash]);
-                console.log(trashs[choosenTrash].dechets.includes(choosenDechet));
                 if(trashs[choosenTrash].dechets.includes(choosenDechet)){
                     resultat++;
-                    //divD.classList='good';
+                    divD.classList='good';
+                } else{
+                    divD.classList='bad';
                 }
 
                 counter++;
-                if(counter == 4){
+                if(counter === 4){
                     showBtn();
                     result();
                 }
@@ -72,21 +72,21 @@ function getDechets(){
     var uniqueDechets=new Set();
     while(uniqueDechets.size<nbreDechet){
 
-        var maxTrash=Object.keys(trashs).length
+        var maxTrash=Object.keys(trashs).length;
         var trashR=Math.floor(Math.random()*maxTrash);
 
         switch(trashR){
             case 0:
-                var trashName="jaune";
+                trashName="jaune";
                 break;
             case 1:
-                var trashName="vert";
+                trashName="vert";
                 break;
             case 2:
-                var trashName="bleu";
+                trashName="bleu";
                 break;
             case 3:
-                var trashName="marron";
+                trashName="marron";
                 break;
         }
         var dechetsR=Math.floor(Math.random()*trashs[trashName].dechets.length);
@@ -102,6 +102,15 @@ function showBtn(){
 }
 function result(){
     btn.onclick=function(){
-        alert(resultat);
-    }
+        document.getElementById("result").innerHTML="Vous avez "+resultat+" points";
+        var goods=document.getElementsByClassName("good");
+        var bads=document.getElementsByClassName("bad");
+        for(var good of goods){
+            good.style.backgroundColor="#51ba2e";
+        }
+        for(var bad of bads){
+            bad.style.backgroundColor="#e03725";
+        }
+
+    };
 }
